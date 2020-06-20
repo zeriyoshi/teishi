@@ -1,0 +1,5 @@
+*.DS_Store
+*.kicad_pcb-bak
+sym-lib-table
+fp-info-cache
+fp-lib-table

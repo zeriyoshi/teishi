@@ -1,0 +1,355 @@
+EESchema Schematic File Version 4
+LIBS:teishi-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR0102
+U 1 1 5D5BABC7
+P 3250 1450
+F 0 "#PWR0102" H 3250 1300 50  0001 C CNN
+F 1 "VCC" V 3267 1578 50  0000 L CNN
+F 2 "" H 3250 1450 50  0001 C CNN
+F 3 "" H 3250 1450 50  0001 C CNN
+	1    3250 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5D5BB5F8
+P 3250 1250
+F 0 "#PWR0103" H 3250 1000 50  0001 C CNN
+F 1 "GND" V 3255 1122 50  0000 R CNN
+F 2 "" H 3250 1250 50  0001 C CNN
+F 3 "" H 3250 1250 50  0001 C CNN
+	1    3250 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW0
+U 1 1 5D5BFA07
+P 1550 3100
+F 0 "SW0" H 1550 3385 50  0000 C CNN
+F 1 "SW_Push" H 1550 3294 50  0000 C CNN
+F 2 "shikamiya_san:MX-ALPS-Choc-X-straight-oneside" H 1550 3300 50  0001 C CNN
+F 3 "~" H 1550 3300 50  0001 C CNN
+	1    1550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D5C03E0
+P 2350 3100
+F 0 "SW1" H 2350 3385 50  0000 C CNN
+F 1 "SW_Push" H 2350 3294 50  0000 C CNN
+F 2 "shikamiya_san:MX-ALPS-Choc-X-straight-oneside" H 2350 3300 50  0001 C CNN
+F 3 "~" H 2350 3300 50  0001 C CNN
+	1    2350 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D0
+U 1 1 5D5C6243
+P 1850 3300
+F 0 "D0" V 1896 3221 50  0000 R CNN
+F 1 "D" V 1805 3221 50  0000 R CNN
+F 2 "foostan_san:D3_TH_SMD" H 1850 3300 50  0001 C CNN
+F 3 "~" H 1850 3300 50  0001 C CNN
+	1    1850 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5D5CDD4B
+P 2650 3300
+F 0 "D1" V 2696 3221 50  0000 R CNN
+F 1 "D" V 2605 3221 50  0000 R CNN
+F 2 "foostan_san:D3_TH_SMD" H 2650 3300 50  0001 C CNN
+F 3 "~" H 2650 3300 50  0001 C CNN
+	1    2650 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 3100 1850 3100
+Wire Wire Line
+	1850 3100 1850 3150
+Wire Wire Line
+	2550 3100 2650 3100
+Wire Wire Line
+	2650 3100 2650 3150
+Wire Wire Line
+	1100 3450 1850 3450
+Connection ~ 1850 3450
+Wire Wire Line
+	1850 3450 2650 3450
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5D5DEFB2
+P 1550 3850
+F 0 "SW2" H 1550 4135 50  0000 C CNN
+F 1 "SW_Push" H 1550 4044 50  0000 C CNN
+F 2 "shikamiya_san:MX-ALPS-Choc-X-straight-oneside" H 1550 4050 50  0001 C CNN
+F 3 "~" H 1550 4050 50  0001 C CNN
+	1    1550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5D5DEFC4
+P 1850 4050
+F 0 "D2" V 1896 3971 50  0000 R CNN
+F 1 "D" V 1805 3971 50  0000 R CNN
+F 2 "foostan_san:D3_TH_SMD" H 1850 4050 50  0001 C CNN
+F 3 "~" H 1850 4050 50  0001 C CNN
+	1    1850 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 3850 1850 3850
+Wire Wire Line
+	1850 3850 1850 3900
+Wire Wire Line
+	1100 4200 1850 4200
+Wire Wire Line
+	1350 2800 1350 3100
+Connection ~ 1350 3100
+Wire Wire Line
+	1350 3100 1350 3850
+Wire Wire Line
+	2150 2800 2150 3100
+Text GLabel 1100 3450 0    50   Input ~ 0
+ROW0
+Text GLabel 1100 4200 0    50   Input ~ 0
+ROW1
+Text GLabel 1350 2800 1    50   Input ~ 0
+COL0
+Text GLabel 2150 2800 1    50   Input ~ 0
+COL1
+Text GLabel 3150 1750 2    50   Input ~ 0
+COL0
+Text GLabel 3150 1650 2    50   Input ~ 0
+COL1
+Wire Wire Line
+	3000 1550 3150 1550
+Wire Wire Line
+	3000 1650 3150 1650
+Wire Wire Line
+	3000 1450 3250 1450
+Wire Wire Line
+	3000 1250 3250 1250
+Text GLabel 3150 1350 2    50   Input ~ 0
+RST
+Wire Wire Line
+	3000 1350 3150 1350
+Text GLabel 3800 2850 0    50   Input ~ 0
+RST
+$Comp
+L Switch:SW_Push SW_RST1
+U 1 1 5D607CFA
+P 4100 2850
+F 0 "SW_RST1" H 4100 3135 50  0000 C CNN
+F 1 "SW_Push" H 4100 3044 50  0000 C CNN
+F 2 "foostan_san:ResetSW" H 4100 3050 50  0001 C CNN
+F 3 "~" H 4100 3050 50  0001 C CNN
+	1    4100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5D608E47
+P 4400 2850
+F 0 "#PWR0104" H 4400 2600 50  0001 C CNN
+F 1 "GND" V 4405 2722 50  0000 R CNN
+F 2 "" H 4400 2850 50  0001 C CNN
+F 3 "" H 4400 2850 50  0001 C CNN
+	1    4400 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 2850 3900 2850
+Wire Wire Line
+	4300 2850 4400 2850
+Connection ~ 2150 3100
+Wire Wire Line
+	2150 3100 2150 3850
+Wire Wire Line
+	2650 3850 2650 3900
+Wire Wire Line
+	2550 3850 2650 3850
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5D5DEFB8
+P 2350 3850
+F 0 "SW3" H 2350 4135 50  0000 C CNN
+F 1 "SW_Push" H 2350 4044 50  0000 C CNN
+F 2 "shikamiya_san:MX-ALPS-Choc-X-straight-oneside" H 2350 4050 50  0001 C CNN
+F 3 "~" H 2350 4050 50  0001 C CNN
+	1    2350 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 4200
+Wire Wire Line
+	1850 4200 2650 4200
+$Comp
+L Device:D D3
+U 1 1 5D5DEFCA
+P 2650 4050
+F 0 "D3" V 2696 3971 50  0000 R CNN
+F 1 "D" V 2605 3971 50  0000 R CNN
+F 2 "foostan_san:D3_TH_SMD" H 2650 4050 50  0001 C CNN
+F 3 "~" H 2650 4050 50  0001 C CNN
+	1    2650 4050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1100 4950 0    50   Input ~ 0
+ROW2
+Connection ~ 1350 3850
+Wire Wire Line
+	1350 3850 1350 4600
+Wire Wire Line
+	1100 4950 1850 4950
+Wire Wire Line
+	1850 4600 1850 4650
+Wire Wire Line
+	1750 4600 1850 4600
+$Comp
+L Device:D D4
+U 1 1 5D5E1CE9
+P 1850 4800
+F 0 "D4" V 1896 4721 50  0000 R CNN
+F 1 "D" V 1805 4721 50  0000 R CNN
+F 2 "foostan_san:D3_TH_SMD" H 1850 4800 50  0001 C CNN
+F 3 "~" H 1850 4800 50  0001 C CNN
+	1    1850 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5D5E1CD7
+P 1550 4600
+F 0 "SW4" H 1550 4885 50  0000 C CNN
+F 1 "SW_Push" H 1550 4794 50  0000 C CNN
+F 2 "keebio_san:Hybrid_PCB_200H" H 1550 4800 50  0001 C CNN
+F 3 "~" H 1550 4800 50  0001 C CNN
+	1    1550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1850 3150 1850
+Wire Wire Line
+	3000 1750 3150 1750
+Text GLabel 3150 1850 2    50   Input ~ 0
+ROW1
+Text GLabel 3150 1550 2    50   Input ~ 0
+ROW0
+Text GLabel 3150 1950 2    50   Input ~ 0
+ROW2
+Wire Wire Line
+	3000 1950 3150 1950
+NoConn ~ 3000 1150
+NoConn ~ 3000 2050
+NoConn ~ 3000 2150
+NoConn ~ 3000 2250
+NoConn ~ 1600 1150
+NoConn ~ 1600 1250
+NoConn ~ 1600 1550
+NoConn ~ 1600 1650
+NoConn ~ 1600 1750
+NoConn ~ 1600 1850
+NoConn ~ 1600 1950
+NoConn ~ 1600 2050
+NoConn ~ 1600 2150
+NoConn ~ 1600 2250
+$Comp
+L ProMicro:ProMicro U1
+U 1 1 5D5B83EF
+P 2300 1900
+F 0 "U1" H 2300 2937 60  0000 C CNN
+F 1 "ProMicro" H 2300 2831 60  0000 C CNN
+F 2 "keebio_san:ArduinoProMicro-ZigZag" H 2400 850 60  0001 C CNN
+F 3 "" H 2400 850 60  0000 C CNN
+	1    2300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D620060
+P 1400 1350
+F 0 "#PWR0101" H 1400 1100 50  0001 C CNN
+F 1 "GND" V 1405 1222 50  0000 R CNN
+F 2 "" H 1400 1350 50  0001 C CNN
+F 3 "" H 1400 1350 50  0001 C CNN
+	1    1400 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 1350 1400 1350
+$Comp
+L power:GND #PWR0105
+U 1 1 5D6243A2
+P 1400 1450
+F 0 "#PWR0105" H 1400 1200 50  0001 C CNN
+F 1 "GND" V 1405 1322 50  0000 R CNN
+F 2 "" H 1400 1450 50  0001 C CNN
+F 3 "" H 1400 1450 50  0001 C CNN
+	1    1400 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 1450 1400 1450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D624EAB
+P 3800 3250
+F 0 "#FLG0101" H 3800 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 3800 3423 50  0000 C CNN
+F 2 "" H 3800 3250 50  0001 C CNN
+F 3 "~" H 3800 3250 50  0001 C CNN
+	1    3800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5D625669
+P 3800 3250
+F 0 "#PWR0106" H 3800 3000 50  0001 C CNN
+F 1 "GND" H 3805 3077 50  0000 C CNN
+F 2 "" H 3800 3250 50  0001 C CNN
+F 3 "" H 3800 3250 50  0001 C CNN
+	1    3800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 5D6261A5
+P 4200 3250
+F 0 "#PWR0107" H 4200 3100 50  0001 C CNN
+F 1 "VCC" H 4217 3423 50  0000 C CNN
+F 2 "" H 4200 3250 50  0001 C CNN
+F 3 "" H 4200 3250 50  0001 C CNN
+	1    4200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D626ADB
+P 4200 3250
+F 0 "#FLG0102" H 4200 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4200 3423 50  0000 C CNN
+F 2 "" H 4200 3250 50  0001 C CNN
+F 3 "~" H 4200 3250 50  0001 C CNN
+	1    4200 3250
+	1    0    0    1   
+$EndComp
+$EndSCHEMATC
